@@ -5,12 +5,12 @@ var ExtractTextPlugin = require('extract-text-webpack-plugin');
 var HOST = 'https://ifelsee.github.io/vue-imgcrop-mobile/';
 module.exports = {
     entry:{
-        app: ['./src/app.js'],
-        vux: ['vux']
+        app: ['./src/app.js']
+        // vux: ['vux']
     },
     output:{
         path: './docs',
-        publicPath: HOST + 'docs/',
+        // publicPath: HOST + 'docs/',
         filename:'js/[name].build.js',
         chunkFilename: 'js/[name].chunks.js'    
     },
