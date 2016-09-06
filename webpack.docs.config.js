@@ -2,7 +2,7 @@ var webpack = require('webpack');
 var path = require('path');
 var HtmlWebpackPlugin = require('html-webpack-plugin');
 var ExtractTextPlugin = require('extract-text-webpack-plugin');
-var HOST = '';
+var HOST = 'https://ifelsee.github.io/vue-imgcrop-mobile/';
 module.exports = {
     entry:{
         app: ['./src/app.js'],
@@ -77,7 +77,7 @@ module.exports = {
             name: ['vux'], // 将公共模块提取，生成名为`vux`bundle
             minChunks: Infinity // 提取至少*个模块共有的部分
         }),
-        new ExtractTextPlugin('css/[name].css?[hash]', {
+        new ExtractTextPlugin('css/[name].css', {
             allChunks: true
         }),
         new webpack.DefinePlugin({
