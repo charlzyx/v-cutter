@@ -1,0 +1,63 @@
+{
+  "name": "vue-babel-playground",
+  "version": "1.0.0",
+  "description": "a environment for Vue.js in ES6 (babel) base on webpack",
+  "main": "app.js",
+  "scripts": {
+    "init": "webpack --progress --hide-modules --config webpack.dev.config.js",
+    "dev": "webpack-dev-server --progress --profile --colors --hot --host 0.0.0.0 --inline --config webpack.dev.config.js",
+    "build": "webpack --progress --hide-modules --config webpack.prod.config.js",
+    "docs": "webpack --progress --hide-modules --config webpack.docs.config.js",
+    "hot": "browser-sync start --port=8080 --server --files=./dist/**/*.*",
+    "debug": "weinre --httpPort 8081 --boundHost -all-"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/ifelsee/vue-imgcrop-mobile.git"
+  },
+  "keywords": [
+    "vue",
+    "babel",
+    "webpack"
+  ],
+  "author": "ifelsee@github",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/ifelsee/vue-imgcrop-mobile/issues"
+  },
+  "homepage": "https://github.com/ifelsee/vue-imgcrop-mobile#readme",
+  "devDependencies": {
+    "babel-core": "^6.1.2",
+    "babel-loader": "^6.1.0",
+    "babel-plugin-transform-runtime": "^6.1.2",
+    "babel-preset-es2015": "^6.1.2",
+    "babel-preset-stage-0": "^6.1.2",
+    "babel-runtime": "^5.8.0",
+    "css-loader": "^0.23.0",
+    "extract-text-webpack-plugin": "^1.0.1",
+    "file-loader": "^0.9.0",
+    "html-loader": "^0.4.3",
+    "html-webpack-plugin": "^2.22.0",
+    "json-loader": "^0.5.4",
+    "less": "^2.7.1",
+    "less-loader": "^2.2.3",
+    "script-loader": "^0.7.0",
+    "style-loader": "^0.13.0",
+    "url-loader": "^0.5.7",
+    "vue-loader": "^7.3.0",
+    "vue-style-loader": "^1.0.0",
+    "vue-html-loader": "^1.0.0",
+    "vue-hot-reload-api": "^1.2.0",
+    "webpack": "^1.13.1"
+  },
+  "dependencies": {
+    "vue-validator": "^2.1.6",
+    "vue": "^1.0.26",
+    "vue-animate-css": "^1.0.0",
+    "vue-resource": "^0.9.3",
+    "vue-router": "^0.7.13",
+    "vuex": "^1.0.0-rc.2",
+    "vue-touch": "^1.1.0",
+    "vux": "^0.1.3" 
+  }
+}
